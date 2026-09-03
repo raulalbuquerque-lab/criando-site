@@ -1,43 +1,55 @@
-body{
-  background-color: white;
-  color: black;
+body {
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:50px
+  margin: 50px;
 }
-h1{
+
+h1 {
   font-size: 40px;
   text-align: center;
   font-family: "Molle", cursive;
   font-weight: bold;
 }
-p{
-  text-align: justify
-}
-img{
-  margin-top: 20px;
-  max-width: 80%;
-   }
-a{
-  text-decoration: none;
-  color: maroon;
-  text-align: center;
-}
-a:hover{
-  color: blue;
-}
-body.modo_escuro {
-  background-color: black;
-  color: seashell;
+
+p {
+  text-align: justify;
 }
 
+img {
+  margin-top: 20px;
+  max-width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #4da6ff; /* Cor azul suave para destacar os links no fundo preto */
+  text-align: center;
+}
+
+a:hover {
+  color: #80bfff;
+}
+
+/* Ajuste no modo claro (quando alternar pelo botão) */
+body.modo_claro {
+  background-color: seashell;
+  color: maroon;
+}
+
+body.modo_claro a {
+  color: maroon;
+}
 
 button {
   border: 2px solid green;
   border-radius: 20px;
-  width: 80px;
+  width: 100px;
   position: fixed;
   right: 10px;
-  top: 50px
+  top: 50px;
+  cursor: pointer;
+  padding: 5px;
 }
