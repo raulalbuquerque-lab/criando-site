@@ -1,4 +1,4 @@
-cconst botao = document.getElementById('botao_tema');
+const botao = document.getElementById('botao_tema');
 
 function alternarModo() {
   document.body.classList.toggle('modo_claro');
